@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "城市切换",
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "city-select": "/components/city-select/city-select"
+  }
+}

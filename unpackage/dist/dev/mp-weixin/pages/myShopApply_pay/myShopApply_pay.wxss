@@ -1,0 +1,8 @@
+
+.shopPay{padding: 40rpx 4%; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex;-webkit-box-pack: justify;-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between; -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap;}
+.shopPay .item{ width: 48%;padding: 40rpx 30rpx;-webkit-box-sizing: border-box;box-sizing: border-box;text-align: center;border-radius: 10rpx; margin-bottom: 30rpx;}
+.shopPay .item .icon{ width: 110rpx; height: 110rpx; margin: 0 auto;}
+.shopPay .item .icon image{width: 100%; height: 100%;}
+.shopPay .item .money{margin: 30rpx auto;}
+.shopPay .item .choose image{width: 40rpx; height: 40rpx; margin: 0 auto; display: block;}
+

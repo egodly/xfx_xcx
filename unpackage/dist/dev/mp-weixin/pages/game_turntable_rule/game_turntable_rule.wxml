@@ -1,0 +1,1 @@
+<view><view class="xqInfor"><view class="font14 center" style="padding:30rpx 0;">{{mainData.title}}</view><view class="content ql-editor"><rich-text nodes="{{mainData.content}}"></rich-text></view></view></view>

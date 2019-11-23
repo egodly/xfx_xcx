@@ -1,0 +1,1 @@
+<view><view class="myRowBetween"><block wx:for="{{mainData}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="item flexRowBetween"><view class="left"><view>{{item.products&&item.products[0]&&item.products[0].snap_product?item.products[0].snap_product.title:''}}</view></view><view class="right pubColor">{{item.create_time}}</view></view></block></view></view>

@@ -1,0 +1,87 @@
+<view>
+  <form report-submit="true" data-event-opts="{{[['submit',[['formIdAdd',['$event']]]]]}}" bindsubmit="__e">
+    <view class="index_topBj">
+      <view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="adrsGps" bindtap="__e">
+        <view class="dd">{{city}}</view>
+        <image class="icon" src="../../static/images/home-icon1.png" mode></image>
+      </view>
+      <view class="banner-box">
+        <view class="banner oh">
+          <swiper class="swiper-box" indicator-dots="true" autoplay="true" interval="3000" duration="1000" indicator-active-color="#434343">
+            <block wx:for="{{swiperData}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+              <block>
+                <swiper-item class="swiper-item" data-url="{{item.url}}" data-event-opts="{{[['tap',[['e1',['$event']]]]]}}" bindtap="__e">
+                  <image class="slide-image" src="{{item.mainImg&&item.mainImg[0]?item.mainImg[0].url:''}}"></image>
+                </swiper-item>
+              </block>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+    <view class="pdlr4 inde_fivePic">
+      <view class="flexRowBetween">
+        <view data-event-opts="{{[['tap',[['intoNew',['$event']]]]]}}" class="item" style="width:340rpx;height:240rpx;" bindtap="__e">
+          <image src="../../static/images/home-img1.jpg" mode></image>
+        </view>
+        <view data-event-opts="{{[['tap',[['intoStore',['$event']]]]]}}" class="item" style="width:330rpx;height:240rpx;" bindtap="__e">
+          <image src="../../static/images/home-img2.jpg" mode></image>
+        </view>
+      </view>
+      <view class="flexRowBetween threebox">
+        <view data-event-opts="{{[['tap',[['e2',['$event']]]]]}}" class="item" bindtap="__e">
+          <image src="../../static/images/home-img3.jpg" mode></image>
+        </view>
+        <view data-event-opts="{{[['tap',[['e3',['$event']]]]]}}" class="item" bindtap="__e">
+          <image src="../../static/images/home-img4.jpg" mode></image>
+        </view>
+        <view data-event-opts="{{[['tap',[['toTab',['$event']]]]]}}" class="item" bindtap="__e">
+          <image src="../../static/images/home-img5.jpg" mode></image>
+        </view>
+      </view>
+    </view>
+    <view class="f5H10"></view>
+    <view class="activity-title ">
+      <view class="title">
+        <text class="tt" style="font-weight:bold;">限时拼</text>
+        <text class="sub_title">距结束</text>
+        <text class="labelTime">08</text>
+        <text class="colon">:</text>
+        <text class="labelTime">08</text>
+        <text class="colon">:</text>
+        <text class="labelTime">08</text>
+      </view>
+    </view>
+    <view class="pdlr4">
+      <block wx:for="{{mainData}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <view data-id="{{item.id}}" data-event-opts="{{[['tap',[['e4',['$event']]]]]}}" bindtap="__e">
+          <view data-event-opts="{{[['tap',[['e5',['$event']]]]]}}" style="padding-top:2%;width:100%;height:300rpx;" bindtap="__e">
+            <image style="width:100%;height:100%;display:block;border-radius:10rpx;" src="{{item.mainImg&&item.mainImg[0]?item.mainImg[0].url:''}}"></image>
+          </view>
+          <view style="padding-top:2%;">
+            <view class="avoidOverflow2blod title" >{{item.title?item.title:''}}</view>
+            <view class="avoidOverflow2 title" style="color:#585858;">{{item.description?item.description:''}}</view>
+            <view style="font-size:30rpx;padding-top:4%;">
+              <view class="lable" style="float:right;padding-left:4%;border-left:solid 1rpx #EFEFEF;width:60%;">
+                <view class="tt font-hui">配送时间：</view>
+                <view class="tt" style="color:red;">次日达</view>
+              </view>
+              <view class="lable font-hui" style="width:40%;">
+                <view class="tt">{{"已售："+(item.sale_count?item.sale_count:'0')}}</view>
+                <view class="tt">{{"仅剩："+(item.stock?item.stock:'0')}}</view>
+              </view>
+            </view>
+            <view class="money flexRowBetween" style="padding-top:4%;margin-bottom:4%;">
+              <view class="flex left" style="vertical-align:bottom;">
+                <view class="price" style="font-weight:bold;font-size:40rpx;">{{item.price?item.price:''}}</view>
+                <view class="yuan price font-hui" style="font-size:30rpx;text-decoration:line-through;color:#585858;vertical-align:bottom;">{{item.o_price?item.o_price:''}}</view>
+              </view>
+              <button class="addbtn" style="margin:0;" form-type="submit">{{item.order&&item.order.length==0?'开团':'立即抢购'}}</button>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+    <view class="f5H10"></view>
+  </form>
+</view>

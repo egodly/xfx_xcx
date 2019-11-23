@@ -1,0 +1,101 @@
+{
+  "pages": [
+    "pages/launch/launch",
+    "pages/index/index",
+    "pages/fengxiangba/fengxiangba",
+    "pages/fengxiangba_fabu/fengxiangba_fabu",
+    "pages/jifenShop/jifenShop",
+    "pages/user/user",
+    "pages/simpleDetail/simpleDetail",
+    "pages/newPeople/newPeople",
+    "pages/newPeople_classify/newPeople_classify",
+    "pages/goodsJoinDetail/goodsJoinDetail",
+    "pages/goodsOpenDetailTwo/goodsOpenDetailTwo",
+    "pages/goodsDetail_pintuan/goodsDetail_pintuan",
+    "pages/confirmOrder/confirmOrder",
+    "pages/myAddress/myAddress",
+    "pages/myAddressAdd/myAddressAdd",
+    "pages/routine/routine",
+    "pages/routine_classify/routine_classify",
+    "pages/myShopApply/myShopApply",
+    "pages/myShopApply_pay/myShopApply_pay",
+    "pages/myShop/myShop",
+    "pages/myShopPayDetail/myShopPayDetail",
+    "pages/myShopPoster/myShopPoster",
+    "pages/coupon/coupon",
+    "pages/coupon_rule/coupon_rule",
+    "pages/activityDetail/activityDetail",
+    "pages/activityJoin/activityJoin",
+    "pages/fengxiangba_pl/fengxiangba_pl",
+    "pages/fengxiangba_plDetail/fengxiangba_plDetail",
+    "pages/jiFenShopDetail/jiFenShopDetail",
+    "pages/confirmOrderTwo/confirmOrderTwo",
+    "pages/myZiTiAddress/myZiTiAddress",
+    "pages/game/game",
+    "pages/game_bargain/game_bargain",
+    "pages/game_bargainDetail/game_bargainDetail",
+    "pages/game_bargainDetailTwo/game_bargainDetailTwo",
+    "pages/game_turntable/game_turntable",
+    "pages/game_turntable_rule/game_turntable_rule",
+    "pages/game_turntable_winRecord/game_turntable_winRecord",
+    "pages/user_perInfor/user_perInfor",
+    "pages/myOrder/myOrder",
+    "pages/myOrder_hexiao/myOrder_hexiao",
+    "pages/myCoupon/myCoupon",
+    "pages/myIntegral/myIntegral",
+    "pages/myYongJin/myYongJin",
+    "pages/myCashOut/myCashOut",
+    "pages/myBankMsg/myBankMsg",
+    "pages/myCommunityCenter/myCommunityCenter",
+    "pages/honeycomb_login/honeycomb_login",
+    "pages/honeycomb_register/honeycomb_register",
+    "pages/honeycomb_center/honeycomb_center",
+    "pages/honeycomb_shopMsg/honeycomb_shopMsg",
+    "pages/honeycomb_writeOff/honeycomb_writeOff",
+    "pages/myBeeman_register/myBeeman_register"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小蜂拼拼",
+    "navigationBarBackgroundColor": "#f3d012"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#222",
+    "backgroundColor": "#f5f5f5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "小蜂拼拼",
+        "iconPath": "static/images/nabar1.png",
+        "selectedIconPath": "static/images/nabar1-a.png"
+      },
+      {
+        "pagePath": "pages/fengxiangba/fengxiangba",
+        "text": "蜂享吧",
+        "iconPath": "static/images/nabar2.png",
+        "selectedIconPath": "static/images/nabar2-a.png"
+      },
+      {
+        "pagePath": "pages/jifenShop/jifenShop",
+        "text": "积分商城",
+        "iconPath": "static/images/nabar3.png",
+        "selectedIconPath": "static/images/nabar3-a.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "static/images/nabar4.png",
+        "selectedIconPath": "static/images/nabar4-a.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {}
+}

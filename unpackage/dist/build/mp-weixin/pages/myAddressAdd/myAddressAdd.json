@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "添加地址",
+  "onReachBottomDistance": 100,
+  "usingComponents": {
+    "mpvue-picker": "/components/mpvue-picker/mpvuePicker",
+    "mpvue-city-picker": "/components/mpvue-citypicker/mpvueCityPicker"
+  }
+}

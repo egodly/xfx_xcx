@@ -1,0 +1,1 @@
+<view><view class="ewma"><image src="{{mainData.qrcode}}" mode></image></view></view>

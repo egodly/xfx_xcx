@@ -1,0 +1,1 @@
+<view><view class="posterPic"><view data-event-opts="{{[['tap',[['prev',['$event']]]]]}}" class="back_icon" bindtap="__e"><image src="../../static/images/left-arrow.png" mode></image></view><image class="img" src="../../static/images/posters-img1.png" mode></image><image class="ewm" src="../../static/images/posters-img2.png" mode></image></view></view>
